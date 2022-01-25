@@ -1,0 +1,188 @@
+/* Ipad */
+.l-heading{
+  font-size: 2rem;
+}
+
+.navbar{
+  flex-direction: column;
+  height: 180px;
+}
+.navbar ul{
+  padding-bottom:25px ;
+}
+.addflex{
+  flex-direction: column;
+}
+.addgrid{
+  grid-template-columns: 1fr;
+
+}
+#home-features .features-container{
+  grid-template-columns: repeat(1,1fr);
+
+}
+.information{
+  grid-template-columns: repeat(1,1fr);
+}
+#testimonial .addgrid{
+  grid-template-columns: repeat(1,1fr);
+}
+.welcome-content{
+  padding:2rem 1rem;
+width: 100%;
+text-align: center;
+}
+.services .addgrid{
+  grid-template-columns: repeat(2,1fr);
+}
+.whyus .addgrid{
+  grid-template-columns: repeat(2,1fr);
+  
+}
+.flexpara{
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.432);
+}
+#testimonial .addgrid>div{
+  background: rgba(255, 255, 255, 0.61);
+}
+.sector-img,.sector-cont{
+  width: 100%;
+  height: 80vh;
+}
+.sector-img{
+  height: 60vh;
+  
+}
+.brands img{
+  width: 100%;
+  height: 250px;
+}
+#servicedetail .sector-img img{
+margin: auto;
+height: 70%;
+width: 100%;
+}
+#servicedetail .sector-cont {
+  height: 100vh;
+}
+#servicedetail .addflex .sector-cont{
+  margin-bottom:0px ;
+  }
+ 
+/* HAMBURGER MENU */
+.topnav{
+  display: block;
+}
+.top{
+  display: none;
+}
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(77, 73, 73);
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  border-bottom: 1px solid #333 ;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: rgb(232, 168, 10);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  width: 60px;
+}
+.topnav a:hover{
+  background-color: #e6e0e0;
+}
+
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #ffffff;
+  color: white;
+}
+.rent .addgrid{
+  grid-template-columns: repeat(2,1fr);
+}
+/* cONTACT FORM */
+.contactform{
+  display: flex;
+  flex-direction: column;
+}
+.contactform>div{
+ width: 100%;
+}
+input,textarea{
+  width: 80%;
+}
+.footer{
+  grid-template-columns: repeat(2,1fr);
+grid-gap: 0.5rem;
+}
+
+/* Mobile Phones */
+@media(max-width:550px){
+  .notvisible{
+    display: none;
+  }
+  .showcase-2 div h1{
+    font-size: 35px;
+  }
+  .showcase-1 .content h3{
+    font-size: 2rem;
+  }
+
+}
+@media(max-width:500px){
+  .flexpara{
+    height: 200px;
+    font-size: 11px;
+  }
+  .services .addgrid{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .whyus .addgrid{
+    grid-template-columns: repeat(1,1fr);
+    
+  }
+  .showcase-2 div h1{
+    font-size: 26px;
+  }
+
+}
+@media(max-width:350px){
+  .margin-1{
+    visibility: hidden;
+  }
+  .showcase-2{
+    height: 80vh !important;
+
+  }
+  .showcase-2 h1{
+    font-size: 1rem;
+  }
+  #servicedetail .service-cont {
+ height: 100vh;
+  }
+}

@@ -1,0 +1,606 @@
+/* Utility Class */
+:root{
+--max-width:1100px;
+--primary-color:#333;
+--secondry-color:rgb(232, 168, 10);
+--tertiary-color:white;
+--body-back:rgb(241, 239, 239);
+}
+/* Showcase */
+.showcase{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+/* Headings */
+.l-heading{
+  font-size: 2rem;
+}
+.l-heading2{
+  font-size: 1.5rem;
+}
+.l-heading3{
+  font-size: 3rem;
+}
+/* padding */
+.py-1{
+  padding: 30px;
+}
+.py-2{
+  padding: 20px;
+}
+.margin-1{
+  margin: 15px;
+}
+h1,h2,h3{
+  font-family: 'Staatliches', cursive;
+  font-weight: 300;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Staatliches', cursive;
+  margin-bottom:0.55rem ;
+  line-height: 1.3rem;
+}
+a{
+  color: white;
+}
+/* buttons */
+.btn{
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--secondry-color);
+  
+}
+.btn-white{
+  background:transparent;
+  border: 1px solid var(--secondry-color);
+}
+.btn-white:hover {
+opacity: 0.7;
+ 
+}
+.btn-yellow{
+  background:var(--secondry-color);
+  color: white;
+  border: 1px solid var(--secondry-color);
+
+}
+.btn-yellow:hover{
+opacity: 0.7;
+}
+/* Important text */
+.textimp{
+  color: var(--secondry-color);
+}
+/* Grids And Flex */
+.addflex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.addgrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:1.5rem;
+  overflow: hidden;
+}
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+h1,h2{
+  line-height: 1.2;
+}
+p{
+  margin: 10px 0;
+}
+img{
+  width: 100%;
+}
+
+/* Main Css */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  width:100% ;
+ position: fixed;
+ top: 0;
+ padding: 0 30px;
+ height: 80px;
+ border-bottom: solid 1px  rgb(233, 232, 232);
+}
+.navbar ul{
+display: flex;
+
+}
+.navbar a{
+  color: var(--primary-color);
+  padding:25px ;
+  border-right: 0.3px solid rgb(247, 246, 246);
+}
+.navbar a:hover{
+background-color: rgb(243, 241, 241);
+color: var(--secondry-color);
+}
+.current{
+  background-color: rgb(243, 241, 241);
+color: var(--secondry-color) !important;
+}
+.navbar img{
+  width: 110px;
+margin-top: 10px;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  background-color:var(--body-back) ;
+  overflow-y: hidden;
+}
+.showcase-1{
+  background: rgb(20, 20, 20);
+  position: relative;
+  color: white;
+}
+.showcase-1::before{
+  content: '';
+  background:url(./img/showcase1.jpg) no-repeat center center/cover;
+position: absolute;
+background-attachment: fixed;
+
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+opacity: 0.4;
+}
+.top{
+  z-index: 2;
+}
+.content{
+  text-align: center;
+  z-index: 1;
+  
+}
+.showcase-1 .content p{
+  margin-bottom: 20px;
+}
+.showcase-1 .content h1{
+  font-family: 'Lato', sans-serif;
+font-size: ;
+}
+.showcase-1 .content h3{
+font-size: 3rem;
+margin-bottom: 1.5rem;
+font-weight: 300;
+}
+.container{
+  margin: auto;
+  max-width: var(--max-width);
+}
+#home-features .features-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:1rem;
+
+}
+.cards{
+  background-color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-gap:0.7rem;
+  border-radius: 10px;
+  position: relative;
+  top: -7rem;
+  text-align: center;
+  overflow: hidden;
+
+}
+.cards img{
+  width: 100%;
+ height: 250px;
+  align-self: center;
+  justify-self: center;
+}
+.information{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  
+
+}
+
+.information div{
+  padding: 1rem;
+  text-align: center;
+}
+.information h1{
+  color: var(--secondry-color);
+  font-size: 3rem;
+}
+.welcome{
+  background: white;
+
+}
+.welcome-content{
+  padding:2.5rem 5rem;
+  padding-right: 1rem;
+  width: 50%;
+}
+.welcome img{
+  width: 300px;
+margin: auto;
+}
+@font-face {
+  src: url(./fonts/Autograf_PersonalUseOnly.ttf);
+  font-family: sign;
+}
+.signature{
+  font-size: 20px;
+  font-family: sign;
+}
+.addgrid > div{
+  padding: 1rem;
+  background-color: white;
+ border-radius: 10px;
+}
+.services .content{
+  margin: 3rem 0;
+}
+.services .addgrid div{
+  transition: all 0.6s ease-in;
+  box-shadow:2px 2px rgb(117, 115, 115) ;
+
+}
+.services .addgrid  h1{
+  color: var(--secondry-color);
+}
+.icon{
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(182, 176, 176) !important;
+}
+
+.services .addgrid div:hover{
+ box-shadow:5px 5px rgb(117, 115, 115) ;
+ 
+}
+/* SHOWCASE 2 */
+.showcase-2{
+  height: 60vh;
+background: rgb(0, 0, 0);
+position: relative;
+
+}
+.showcase-2::before{
+  content: '';
+background: url(./img/showcase-2.jpg) no-repeat center center/cover;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.7;
+height: 100%;
+width: 100%;
+background-attachment: fixed;
+}
+.showcase-2 div{
+  z-index: 1;
+  color: white;
+}
+.showcase-2 div h1{
+  font-size: 50px;
+  padding:20px 100px;
+}
+/* TESTIMONIAL AND TOP CUSTOMERS */
+.paragraph{
+  display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+overflow: hidden;
+
+}
+.paragraph div{
+  padding: 5px;
+  
+}
+/* Showcase 3 */
+#testimonial .addgrid{
+  grid-template-columns: repeat(2,1fr);
+}
+#testimonial img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.flexpara{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+}
+.showcase-3{
+  background: url(./img/showcase-3.jpg) no-repeat center center/cover;
+  height: 60vh !important;
+}
+#home-features{
+  z-index: 3;
+}
+body{
+  overflow: auto;
+}
+.topnav{
+  display: none;
+}
+/* RENT */
+.rent .addgrid{
+  grid-template-columns: repeat(4,1fr);
+}
+.rent .addgrid a{
+  color: var(--primary-color);
+}
+.rent{
+  text-align: center;
+}
+.container2{
+  max-width: 1400px;
+  margin: auto;
+}
+.rent img{
+  height: 220px;
+}
+.rent img:hover{
+  opacity: 0.7;
+}
+img:hover{
+  opacity: 0.7;
+}
+.logo img:hover{
+  opacity: 1;
+}
+/* Contact Form */
+.contactform{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.contactform>div{
+  width: 50%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background:url(./img/contact\ back.jpg);
+}
+.form input,.form textarea{
+  width: 100%;
+  padding: 6px;
+  margin: 2px;
+  background: rgb(255, 255, 255);
+  color: var(--secondry-color);
+  font-size: 15px;
+}
+.form input:last-child{
+  margin-bottom: 20px;
+  color: white;
+  background-color: var(--secondry-color);
+}
+/* find us */
+#findus{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+background-color: rgb(12, 3, 56);
+}
+.findus{
+  text-align: center;
+  padding: 20px 10px;
+
+}
+#findus h1{
+  font-size: 3rem;
+  color: var(--secondry-color);
+}
+#findus p{
+  font-size: 1.1rem;
+}
+/* Footer */
+.footer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  text-align: center;
+  color: white;
+  padding: 20px 4px;
+background-color:black ;
+position: relative;
+}
+.footer::before{
+  content: '';
+  position: absolute;
+  top: 0 ;
+  left: 0 ;
+  height: 100%;
+  width: 100%;
+  background:url(./img/footer.jpg) no-repeat center center/cover ;
+opacity: 0.7;
+}
+.footer img{
+  width: 150px;
+}
+.footer img:hover{
+  opacity: 1;
+  width: 180px;
+}
+.footer>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3px;
+}
+.footer a:hover{
+  color:rgb(255, 239, 8);
+}
+/* About Page  */
+/* Showcase 4 */
+.showcase-4{
+  height: 70vh !important;
+  background: black;
+  color: white;
+  position: relative;
+
+}
+.showcase-4::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+ 
+
+  width: 100%;
+  background: url(./img/about/showcase-4.jpg) no-repeat center center/cover;
+  opacity: 0.7;
+  background-attachment: fixed;
+}
+/* What we do */
+.sector-img,.sector-cont{
+  width: 50%;
+  height: 60vh;
+}
+.sector-img img{
+width: 100%;
+height: 100%;
+}
+.sector-img img:hover{
+  opacity: 1;
+}
+.sector-cont{
+  text-align: justify;
+  padding: 40px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: white;
+padding-top: 70px;
+}
+.sector-cont p{
+  margin: 30px 10px;
+}
+/* Our top customers */
+.brands >div{
+  text-align: center;
+}
+.brands img{
+  width: 100%;
+  height: 250px;
+}
+/* SERVICES */
+.showcase-5{
+  height: 70vh !important;
+  background: black;
+  color: white;
+  position: relative;
+
+}
+.showcase-5::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+ 
+
+  width: 100%;
+  background: url(./img/about/showcase-4.jpg) no-repeat center center/cover;
+  opacity: 0.7;
+  background-attachment: fixed;
+}
+#servicedetail .sector-img img{
+  width: 70%;
+  height: 70%;
+  margin-top: 70px;
+  margin-left: 90px;
+ 
+}
+#servicedetail .addflex .sector-cont{
+margin-bottom:30px ;
+}
+/* Rental page */
+.showcase-6{
+  height: 70vh !important;
+  background: black;
+  color: white;
+  position: relative;
+
+}
+.showcase-6::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+ 
+
+  width: 100%;
+  background: url(./img/rental/showcase-6.jpg) no-repeat center center/cover;
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+/* Contact Page */
+.showcase-7{
+  
+  background: black;
+  color: white;
+  position: relative;
+
+}
+.showcase-7::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+ 
+
+  width: 100%;
+  background: url(./img/contact/showcase-7.jpg) no-repeat center center/cover;
+  opacity: 0.4;
+  background-attachment: fixed;
+}
+.rent img{
+  height: 270px;
+}
+.findus{
+  padding: 50px;
+}
